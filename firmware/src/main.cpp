@@ -3,6 +3,10 @@
 #define NUM_SW    4
 #define PIN_DEBUG 1
 
+#ifndef SWITCH_TYPE_MOMENTARY
+#define SWITCH_TYPE_TOOGLE
+#endif
+
 typedef struct type_switch_t {
   uint8_t pin_from_wall_switch;
   uint8_t pin_from_rpi;
@@ -24,7 +28,6 @@ void setup() {
 
   sw[0].pin_from_wall_switch = 2;
   sw[0].pin_from_rpi = 6;
-  // sw[0].pin_to_rpi = 8;
   sw[0].pin_to_relay = 10;
   sw[0].state_from_wall_switch = 0;
   sw[0].state_press_from_wall_switch = 0;
@@ -32,7 +35,6 @@ void setup() {
 
   sw[1].pin_from_wall_switch = 3;
   sw[1].pin_from_rpi = 7;
-  // sw[1].pin_to_rpi = 9;
   sw[1].pin_to_relay = 11;
   sw[1].state_from_wall_switch = 0;
   sw[1].state_press_from_wall_switch = 0;
@@ -40,7 +42,6 @@ void setup() {
 
   sw[2].pin_from_wall_switch = 4;
   sw[2].pin_from_rpi = 8;
-  // sw[2].pin_to_rpi = 10;
   sw[2].pin_to_relay = 12;
   sw[2].state_from_wall_switch = 0;
   sw[2].state_press_from_wall_switch = 0;
@@ -48,7 +49,6 @@ void setup() {
 
   sw[3].pin_from_wall_switch = 5;
   sw[3].pin_from_rpi = 9;
-  // sw[2].pin_to_rpi = 10;
   sw[3].pin_to_relay = 13;
   sw[3].state_from_wall_switch = 0;
   sw[3].state_press_from_wall_switch = 0;
@@ -58,7 +58,6 @@ void setup() {
   {
     pinMode(sw[i].pin_from_wall_switch, INPUT_PULLUP);
     pinMode(sw[i].pin_from_rpi, INPUT_PULLUP);
-    // pinMode(sw[i].pin_to_rpi, OUTPUT);
     pinMode(sw[i].pin_to_relay, OUTPUT);
   }
 
@@ -85,20 +84,21 @@ void loop() {
       sw[i].state_from_rpi = r;
       digitalWrite(sw[i].pin_to_relay, r);
       toogle_state = r;
-      // digitalWrite(sw[i].pin_to_rpi, r);
       debug_time = DEBUG_LED_TIME_RESET;
     }
     
+#ifdef SWITCH_TYPE_TOOGLE
     // Signal from wall switch
-    // r = digitalRead(sw[i].pin_from_wall_switch);
-    // if(r != sw[i].state_from_wall_switch)
-    // {
-    //   sw[i].state_from_wall_switch = r;
-    //   digitalWrite(sw[i].pin_to_relay, r);
-    //   // digitalWrite(sw[i].pin_to_rpi, r);
-    //   debug_time = DEBUG_LED_TIME_RESET;
-    // }
+    r = digitalRead(sw[i].pin_from_wall_switch);
+    if(r != sw[i].state_from_wall_switch)
+    {
+      sw[i].state_from_wall_switch = r;
+      digitalWrite(sw[i].pin_to_relay, r);
+      debug_time = DEBUG_LED_TIME_RESET;
+    }
+#endif
 
+#ifdef SWITCH_TYPE_MOMENTARY
     // Signal from wall switch (momentary)
     r = digitalRead(sw[i].pin_from_wall_switch);
     if((r == !SWITCH_RELEASE_STATE) && (sw[i].state_press_from_wall_switch == SWITCH_RELEASE_STATE)) // switch pressed first time
@@ -113,7 +113,7 @@ void loop() {
     {
       sw[i].state_press_from_wall_switch = SWITCH_RELEASE_STATE;
     }
- 
+ #endif
     delay(DEBOUNCE_MS);
 
   }

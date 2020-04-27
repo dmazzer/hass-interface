@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even J1
+L interface-full-rescue:Conn_02x20_Odd_Even-Connector_Generic J1
 U 1 1 5E337FEB
 P 1800 1800
 F 0 "J1" H 1850 2917 50  0000 C CNN
@@ -185,7 +185,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 2400 2100 2400
 $Comp
-L Connector:Screw_Terminal_01x02 J9
+L interface-full-rescue:Screw_Terminal_01x02-Connector J9
 U 1 1 5E34AE0F
 P 3450 7100
 F 0 "J9" H 3800 7100 50  0000 L CNN
@@ -202,7 +202,7 @@ RPI_5V
 Wire Wire Line
 	3650 7100 3750 7100
 $Comp
-L power:+5V #PWR02
+L interface-full-rescue:+5V-power #PWR02
 U 1 1 5E34E075
 P 3750 6950
 F 0 "#PWR02" H 3750 6800 50  0001 C CNN
@@ -213,7 +213,7 @@ F 3 "" H 3750 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L interface-full-rescue:GND-power #PWR05
 U 1 1 5E34ED7B
 P 3750 7350
 F 0 "#PWR05" H 3750 7100 50  0001 C CNN
@@ -258,7 +258,7 @@ F16 "TO_RELAY_D2" O R 3450 5250 50
 F17 "TO_RELAY_D3" O R 3450 5350 50 
 $EndSheet
 $Comp
-L Device:C_Small C2
+L interface-full-rescue:C_Small-Device C2
 U 1 1 5E34A4DA
 P 6450 7150
 F 0 "C2" H 6542 7196 50  0000 L CNN
@@ -269,7 +269,7 @@ F 3 "~" H 6450 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR04
+L interface-full-rescue:+5V-power #PWR04
 U 1 1 5E34A4E0
 P 6450 7000
 F 0 "#PWR04" H 6450 6850 50  0001 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 6450 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L interface-full-rescue:GND-power #PWR08
 U 1 1 5E34A4E6
 P 6450 7350
 F 0 "#PWR08" H 6450 7100 50  0001 C CNN
@@ -291,7 +291,7 @@ F 3 "" H 6450 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L interface-full-rescue:CP-Device C1
 U 1 1 5E34A4EC
 P 6050 7150
 F 0 "C1" H 6168 7196 50  0000 L CNN
@@ -302,7 +302,7 @@ F 3 "~" H 6050 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR03
+L interface-full-rescue:+5V-power #PWR03
 U 1 1 5E34A4F2
 P 6050 7000
 F 0 "#PWR03" H 6050 6850 50  0001 C CNN
@@ -313,7 +313,7 @@ F 3 "" H 6050 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L interface-full-rescue:GND-power #PWR07
 U 1 1 5E34A4F8
 P 6050 7350
 F 0 "#PWR07" H 6050 7100 50  0001 C CNN
@@ -326,7 +326,7 @@ $EndComp
 Wire Wire Line
 	6050 7300 6050 7350
 $Comp
-L Device:LED_ALT D1
+L interface-full-rescue:LED_ALT-Device D1
 U 1 1 5E34A4FF
 P 5450 7150
 F 0 "D1" V 5489 7033 50  0000 R CNN
@@ -337,7 +337,7 @@ F 3 "~" H 5450 7150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
+L interface-full-rescue:R-Device R1
 U 1 1 5E34A505
 P 5450 6800
 F 0 "R1" H 5520 6846 50  0000 L CNN
@@ -348,7 +348,7 @@ F 3 "~" H 5450 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L interface-full-rescue:GND-power #PWR06
 U 1 1 5E34A50B
 P 5450 7350
 F 0 "#PWR06" H 5450 7100 50  0001 C CNN
@@ -361,7 +361,7 @@ $EndComp
 Wire Wire Line
 	5450 7000 5450 6950
 $Comp
-L power:+5V #PWR01
+L interface-full-rescue:+5V-power #PWR01
 U 1 1 5E34A512
 P 5450 6600
 F 0 "#PWR01" H 5450 6450 50  0001 C CNN
@@ -420,7 +420,7 @@ F16 "TO_RELAY_D2" O R 8550 5300 50
 F17 "TO_RELAY_D3" O R 8550 5400 50 
 $EndSheet
 $Comp
-L power:PWR_FLAG #FLG01
+L interface-full-rescue:PWR_FLAG-power #FLG01
 U 1 1 5E38365D
 P 4100 6950
 F 0 "#FLG01" H 4100 7025 50  0001 C CNN
@@ -431,7 +431,7 @@ F 3 "~" H 4100 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG02
+L interface-full-rescue:PWR_FLAG-power #FLG02
 U 1 1 5E383B3D
 P 4100 7350
 F 0 "#FLG02" H 4100 7425 50  0001 C CNN
@@ -502,7 +502,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 7250 6450 7350
 $Comp
-L Connector:Screw_Terminal_01x04 J2
+L interface-full-rescue:Screw_Terminal_01x04-Connector J2
 U 1 1 5E3B48A5
 P 3850 4250
 F 0 "J2" H 3930 4242 50  0000 L CNN
@@ -513,7 +513,7 @@ F 3 "~" H 3850 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J3
+L interface-full-rescue:Screw_Terminal_01x04-Connector J3
 U 1 1 5E3B65C8
 P 6400 4300
 F 0 "J3" H 6480 4292 50  0000 L CNN
@@ -524,7 +524,7 @@ F 3 "~" H 6400 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J6
+L interface-full-rescue:Screw_Terminal_01x04-Connector J6
 U 1 1 5E3B733E
 P 6400 5200
 F 0 "J6" H 6480 5192 50  0000 L CNN
@@ -535,7 +535,7 @@ F 3 "~" H 6400 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J4
+L interface-full-rescue:Screw_Terminal_01x04-Connector J4
 U 1 1 5E3B7813
 P 8950 4300
 F 0 "J4" H 9030 4292 50  0000 L CNN
@@ -546,7 +546,7 @@ F 3 "~" H 8950 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J7
+L interface-full-rescue:Screw_Terminal_01x04-Connector J7
 U 1 1 5E3B83CF
 P 8950 5200
 F 0 "J7" H 9030 5192 50  0000 L CNN
@@ -557,7 +557,7 @@ F 3 "~" H 8950 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J5
+L interface-full-rescue:Screw_Terminal_01x04-Connector J5
 U 1 1 5E3B5C3C
 P 3850 5150
 F 0 "J5" H 3930 5142 50  0000 L CNN
@@ -674,7 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 7200 1850 7200
 $Comp
-L power:GND #PWR09
+L interface-full-rescue:GND-power #PWR09
 U 1 1 5E429319
 P 1850 7450
 F 0 "#PWR09" H 1850 7200 50  0001 C CNN
@@ -689,7 +689,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 7300 1700 7300
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L interface-full-rescue:Conn_01x01-Connector_Generic J?
 U 1 1 5E40F2AF
 P 1500 7300
 AR Path="/5E341693/5E40F2AF" Ref="J?"  Part="1" 
@@ -704,7 +704,7 @@ F 3 "~" H 1500 7300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L interface-full-rescue:Conn_01x01-Connector_Generic J?
 U 1 1 5E40F2A9
 P 1500 7100
 AR Path="/5E341693/5E40F2A9" Ref="J?"  Part="1" 
@@ -719,7 +719,7 @@ F 3 "~" H 1500 7100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L interface-full-rescue:Conn_01x01-Connector_Generic J?
 U 1 1 5E40F2A3
 P 1500 7200
 AR Path="/5E341693/5E40F2A3" Ref="J?"  Part="1" 

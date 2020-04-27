@@ -14,12 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A1
+L interface-full-rescue:Arduino_Nano_v3.x-MCU_Module A1
 U 1 1 5E2ABF00
 P 3550 2250
 AR Path="/5E341693/5E2ABF00" Ref="A1"  Part="1" 
 AR Path="/5E3799FC/5E2ABF00" Ref="A2"  Part="1" 
 AR Path="/5E37C631/5E2ABF00" Ref="A3"  Part="1" 
+AR Path="/5E2ABF00" Ref="A2"  Part="1" 
 F 0 "A2" H 3850 1250 50  0000 C CNN
 F 1 "Arduino" H 3950 1150 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 3550 2250 50  0001 C CIN
@@ -28,7 +29,7 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3550 2250 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L interface-full-rescue:R-Device R2
 U 1 1 5E2D6FBB
 P 2050 3550
 AR Path="/5E341693/5E2D6FBB" Ref="R2"  Part="1" 
@@ -42,7 +43,7 @@ F 3 "~" H 2050 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L interface-full-rescue:R-Device R6
 U 1 1 5E2D75EF
 P 2050 4450
 AR Path="/5E341693/5E2D75EF" Ref="R6"  Part="1" 
@@ -89,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 3250 2050 3250
 $Comp
-L Device:R R3
+L interface-full-rescue:R-Device R3
 U 1 1 5E2E22DB
 P 2300 3550
 AR Path="/5E341693/5E2E22DB" Ref="R3"  Part="1" 
@@ -103,7 +104,7 @@ F 3 "~" H 2300 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L interface-full-rescue:R-Device R4
 U 1 1 5E2E2986
 P 2550 3550
 AR Path="/5E341693/5E2E2986" Ref="R4"  Part="1" 
@@ -117,7 +118,7 @@ F 3 "~" H 2550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L interface-full-rescue:R-Device R5
 U 1 1 5E2E2E54
 P 2800 3550
 AR Path="/5E341693/5E2E2E54" Ref="R5"  Part="1" 
@@ -170,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 4200 2800 3700
 $Comp
-L Device:R R7
+L interface-full-rescue:R-Device R7
 U 1 1 5E2E6E3C
 P 2300 4450
 AR Path="/5E341693/5E2E6E3C" Ref="R7"  Part="1" 
@@ -184,7 +185,7 @@ F 3 "~" H 2300 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L interface-full-rescue:R-Device R8
 U 1 1 5E2E6F85
 P 2550 4450
 AR Path="/5E341693/5E2E6F85" Ref="R8"  Part="1" 
@@ -198,7 +199,7 @@ F 3 "~" H 2550 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L interface-full-rescue:R-Device R9
 U 1 1 5E2E703C
 P 2800 4450
 AR Path="/5E341693/5E2E703C" Ref="R9"  Part="1" 
@@ -224,12 +225,13 @@ Wire Wire Line
 	2050 4300 2050 3900
 Connection ~ 2050 3900
 $Comp
-L power:GND #PWR013
+L interface-full-rescue:GND-power #PWR013
 U 1 1 5E2E97B2
 P 2050 4600
 AR Path="/5E341693/5E2E97B2" Ref="#PWR013"  Part="1" 
 AR Path="/5E3799FC/5E2E97B2" Ref="#PWR026"  Part="1" 
 AR Path="/5E37C631/5E2E97B2" Ref="#PWR039"  Part="1" 
+AR Path="/5E2E97B2" Ref="#PWR026"  Part="1" 
 F 0 "#PWR026" H 2050 4350 50  0001 C CNN
 F 1 "GND" H 2055 4427 50  0000 C CNN
 F 2 "" H 2050 4600 50  0001 C CNN
@@ -238,12 +240,13 @@ F 3 "" H 2050 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L interface-full-rescue:GND-power #PWR014
 U 1 1 5E2E9EE6
 P 2300 4600
 AR Path="/5E341693/5E2E9EE6" Ref="#PWR014"  Part="1" 
 AR Path="/5E3799FC/5E2E9EE6" Ref="#PWR027"  Part="1" 
 AR Path="/5E37C631/5E2E9EE6" Ref="#PWR040"  Part="1" 
+AR Path="/5E2E9EE6" Ref="#PWR027"  Part="1" 
 F 0 "#PWR027" H 2300 4350 50  0001 C CNN
 F 1 "GND" H 2305 4427 50  0000 C CNN
 F 2 "" H 2300 4600 50  0001 C CNN
@@ -252,12 +255,13 @@ F 3 "" H 2300 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L interface-full-rescue:GND-power #PWR015
 U 1 1 5E2EA11A
 P 2550 4600
 AR Path="/5E341693/5E2EA11A" Ref="#PWR015"  Part="1" 
 AR Path="/5E3799FC/5E2EA11A" Ref="#PWR028"  Part="1" 
 AR Path="/5E37C631/5E2EA11A" Ref="#PWR041"  Part="1" 
+AR Path="/5E2EA11A" Ref="#PWR028"  Part="1" 
 F 0 "#PWR028" H 2550 4350 50  0001 C CNN
 F 1 "GND" H 2555 4427 50  0000 C CNN
 F 2 "" H 2550 4600 50  0001 C CNN
@@ -266,12 +270,13 @@ F 3 "" H 2550 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L interface-full-rescue:GND-power #PWR016
 U 1 1 5E2EA1CD
 P 2800 4600
 AR Path="/5E341693/5E2EA1CD" Ref="#PWR016"  Part="1" 
 AR Path="/5E3799FC/5E2EA1CD" Ref="#PWR029"  Part="1" 
 AR Path="/5E37C631/5E2EA1CD" Ref="#PWR042"  Part="1" 
+AR Path="/5E2EA1CD" Ref="#PWR029"  Part="1" 
 F 0 "#PWR029" H 2800 4350 50  0001 C CNN
 F 1 "GND" H 2805 4427 50  0000 C CNN
 F 2 "" H 2800 4600 50  0001 C CNN
@@ -280,12 +285,13 @@ F 3 "" H 2800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR010
+L interface-full-rescue:+5V-power #PWR010
 U 1 1 5E2EA957
 P 3750 1100
 AR Path="/5E341693/5E2EA957" Ref="#PWR010"  Part="1" 
 AR Path="/5E3799FC/5E2EA957" Ref="#PWR023"  Part="1" 
 AR Path="/5E37C631/5E2EA957" Ref="#PWR036"  Part="1" 
+AR Path="/5E2EA957" Ref="#PWR023"  Part="1" 
 F 0 "#PWR023" H 3750 950 50  0001 C CNN
 F 1 "+5V" H 3765 1273 50  0000 C CNN
 F 2 "" H 3750 1100 50  0001 C CNN
@@ -296,12 +302,13 @@ $EndComp
 Wire Wire Line
 	3750 1100 3750 1250
 $Comp
-L power:GND #PWR012
+L interface-full-rescue:GND-power #PWR012
 U 1 1 5E2EC0EE
 P 3550 3600
 AR Path="/5E341693/5E2EC0EE" Ref="#PWR012"  Part="1" 
 AR Path="/5E3799FC/5E2EC0EE" Ref="#PWR025"  Part="1" 
 AR Path="/5E37C631/5E2EC0EE" Ref="#PWR038"  Part="1" 
+AR Path="/5E2EC0EE" Ref="#PWR025"  Part="1" 
 F 0 "#PWR025" H 3550 3350 50  0001 C CNN
 F 1 "GND" H 3555 3427 50  0000 C CNN
 F 2 "" H 3550 3600 50  0001 C CNN
@@ -319,7 +326,7 @@ Connection ~ 3550 3350
 Wire Wire Line
 	3550 3350 3550 3600
 $Comp
-L Connector_Generic:Conn_01x01 J14
+L interface-full-rescue:Conn_01x01-Connector_Generic J14
 U 1 1 5E2EFE7E
 P 2250 1550
 AR Path="/5E341693/5E2EFE7E" Ref="J14"  Part="1" 
@@ -333,12 +340,13 @@ F 3 "~" H 2250 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR011
+L interface-full-rescue:GND-power #PWR011
 U 1 1 5E2F1EF0
 P 2700 1400
 AR Path="/5E341693/5E2F1EF0" Ref="#PWR011"  Part="1" 
 AR Path="/5E3799FC/5E2F1EF0" Ref="#PWR024"  Part="1" 
 AR Path="/5E37C631/5E2F1EF0" Ref="#PWR037"  Part="1" 
+AR Path="/5E2F1EF0" Ref="#PWR024"  Part="1" 
 F 0 "#PWR024" H 2700 1150 50  0001 C CNN
 F 1 "GND" H 2705 1227 50  0001 C CNN
 F 2 "" H 2700 1400 50  0001 C CNN
@@ -347,7 +355,7 @@ F 3 "" H 2700 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J13
+L interface-full-rescue:Conn_01x01-Connector_Generic J13
 U 1 1 5E2EEDF0
 P 2250 1450
 AR Path="/5E341693/5E2EEDF0" Ref="J13"  Part="1" 
@@ -361,7 +369,7 @@ F 3 "~" H 2250 1450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J12
+L interface-full-rescue:Conn_01x01-Connector_Generic J12
 U 1 1 5E2F1B69
 P 2250 1350
 AR Path="/5E341693/5E2F1B69" Ref="J12"  Part="1" 
