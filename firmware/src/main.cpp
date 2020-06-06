@@ -84,7 +84,6 @@ void loop() {
       sw[i].state_from_rpi = r;
       digitalWrite(sw[i].pin_to_relay, r);
       toogle_state = r;
-      debug_time = DEBUG_LED_TIME_RESET;
     }
     
 #ifdef SWITCH_TYPE_TOOGLE
@@ -93,8 +92,8 @@ void loop() {
     if(r != sw[i].state_from_wall_switch)
     {
       sw[i].state_from_wall_switch = r;
-      digitalWrite(sw[i].pin_to_relay, r);
-      debug_time = DEBUG_LED_TIME_RESET;
+      toogle_state = !toogle_state;
+      digitalWrite(sw[i].pin_to_relay, toogle_state);
     }
 #endif
 
@@ -107,7 +106,6 @@ void loop() {
       toogle_state = !toogle_state;
       digitalWrite(sw[i].pin_to_relay, toogle_state);
       // digitalWrite(sw[i].pin_to_rpi, r);
-      debug_time = DEBUG_LED_TIME_RESET;
     }
     if((r == SWITCH_RELEASE_STATE) && (sw[i].state_press_from_wall_switch == !SWITCH_RELEASE_STATE)) // a pressed switch was released
     {
@@ -124,6 +122,9 @@ void loop() {
     debug_time--;
   } 
   else
+  {
     digitalWrite(PIN_DEBUG, HIGH);
+    debug_time = DEBUG_LED_TIME_RESET;
+  }
 
 }

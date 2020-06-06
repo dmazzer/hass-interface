@@ -33,77 +33,77 @@ RPI_5V
 Text GLabel 2450 1100 2    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 2450 1200 2    50   UnSpc ~ 0
-RPI_GPIO_15
+RPI_GPIO_14
 Text GLabel 2450 1300 2    50   UnSpc ~ 0
-RPI_GPIO_16
+RPI_GPIO_15
 Text GLabel 2450 1400 2    50   UnSpc ~ 0
-RPI_GPIO_1
+RPI_GPIO_18
 Text GLabel 2450 1500 2    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 2450 1600 2    50   UnSpc ~ 0
-RPI_GPIO_4
+RPI_GPIO_23
 Text GLabel 2450 1700 2    50   UnSpc ~ 0
-RPI_GPIO_5
+RPI_GPIO_24
 Text GLabel 2450 1800 2    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 2450 1900 2    50   UnSpc ~ 0
-RPI_GPIO_6
+RPI_GPIO_25
 Text GLabel 2450 2000 2    50   UnSpc ~ 0
-RPI_GPIO_10
+RPI_GPIO_8
 Text GLabel 2450 2100 2    50   UnSpc ~ 0
-RPI_GPIO_11
+RPI_GPIO_7
 Text GLabel 2450 2200 2    50   UnSpc ~ 0
 RPI_SCL0
 Text GLabel 2450 2300 2    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 2450 2400 2    50   UnSpc ~ 0
-RPI_GPIO_26
+RPI_GPIO_12
 Text GLabel 2450 2500 2    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 2450 2600 2    50   UnSpc ~ 0
-RPI_GPIO_27
+RPI_GPIO_16
 Text GLabel 2450 2700 2    50   UnSpc ~ 0
-RPI_GPIO_28
+RPI_GPIO_20
 Text GLabel 2450 2800 2    50   UnSpc ~ 0
-RPI_GPIO_29
+RPI_GPIO_21
 Text GLabel 1250 2800 0    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 1250 2700 0    50   UnSpc ~ 0
-RPI_GPIO_25
+RPI_GPIO_26
 Text GLabel 1250 2600 0    50   UnSpc ~ 0
-RPI_GPIO_24
+RPI_GPIO_19
 Text GLabel 1250 2500 0    50   UnSpc ~ 0
-RPI_GPIO_23
+RPI_GPIO_13
 Text GLabel 1250 2400 0    50   UnSpc ~ 0
-RPI_GPIO_22
+RPI_GPIO_6
 Text GLabel 1250 2300 0    50   UnSpc ~ 0
-RPI_GPIO_21
+RPI_GPIO_5
 Text GLabel 1250 2200 0    50   UnSpc ~ 0
 RPI_SDA0
 Text GLabel 1250 2100 0    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 1250 2000 0    50   UnSpc ~ 0
-RPI_GPIO_14
+RPI_GPIO_11
 Text GLabel 1250 1900 0    50   UnSpc ~ 0
-RPI_GPIO_13
+RPI_GPIO_09
 Text GLabel 1250 1800 0    50   UnSpc ~ 0
-RPI_GPIO_12
+RPI_GPIO_10
 Text GLabel 1250 1700 0    50   UnSpc ~ 0
 RPI_3V3
 Text GLabel 1250 1200 0    50   UnSpc ~ 0
-RPI_GPIO_7
+RPI_GPIO_4
 Text GLabel 1250 1300 0    50   UnSpc ~ 0
 RPI_GND
 Text GLabel 1250 1400 0    50   UnSpc ~ 0
-RPI_GPIO_0
+RPI_GPIO_17
 Text GLabel 1250 1500 0    50   UnSpc ~ 0
-RPI_GPIO_2
+RPI_GPIO_27
 Text GLabel 1250 1600 0    50   UnSpc ~ 0
-RPI_GPIO_3
+RPI_GPIO_22
 Text GLabel 1250 1100 0    50   UnSpc ~ 0
-RPI_GPIO_9
+RPI_GPIO_3
 Text GLabel 1250 1000 0    50   UnSpc ~ 0
-RPI_GPIO_8
+RPI_GPIO_2
 Text GLabel 1250 900  0    50   UnSpc ~ 0
 RPI_3V3
 Wire Wire Line
@@ -446,51 +446,51 @@ Wire Wire Line
 Wire Wire Line
 	4100 7350 4100 7200
 Text GLabel 6200 4750 2    50   UnSpc ~ 0
-RPI_GPIO_25
-Text GLabel 6200 4650 2    50   UnSpc ~ 0
-RPI_GPIO_24
-Text GLabel 6200 4050 2    50   UnSpc ~ 0
-RPI_GPIO_23
-Text GLabel 6200 3950 2    50   UnSpc ~ 0
-RPI_GPIO_22
-Text GLabel 6200 3850 2    50   UnSpc ~ 0
-RPI_GPIO_21
-Text GLabel 3650 4900 2    50   UnSpc ~ 0
-RPI_GPIO_13
-Text GLabel 3650 4800 2    50   UnSpc ~ 0
-RPI_GPIO_12
-Text GLabel 3650 3900 2    50   UnSpc ~ 0
-RPI_GPIO_7
-Text GLabel 3650 4000 2    50   UnSpc ~ 0
-RPI_GPIO_0
-Text GLabel 3650 4600 2    50   UnSpc ~ 0
-RPI_GPIO_2
-Text GLabel 3650 4700 2    50   UnSpc ~ 0
-RPI_GPIO_3
-Text GLabel 3650 3800 2    50   UnSpc ~ 0
-RPI_GPIO_9
-Text GLabel 3650 3700 2    50   UnSpc ~ 0
-RPI_GPIO_8
-Text GLabel 6200 4850 2    50   UnSpc ~ 0
-RPI_GPIO_1
-Text GLabel 6200 4950 2    50   UnSpc ~ 0
-RPI_GPIO_4
-Text GLabel 8750 3750 2    50   UnSpc ~ 0
-RPI_GPIO_5
-Text GLabel 8750 3850 2    50   UnSpc ~ 0
-RPI_GPIO_6
-Text GLabel 8750 3950 2    50   UnSpc ~ 0
-RPI_GPIO_10
-Text GLabel 8750 4050 2    50   UnSpc ~ 0
-RPI_GPIO_11
-Text GLabel 8750 4650 2    50   UnSpc ~ 0
 RPI_GPIO_26
-Text GLabel 8750 4750 2    50   UnSpc ~ 0
+Text GLabel 6200 4650 2    50   UnSpc ~ 0
+RPI_GPIO_19
+Text GLabel 6200 4050 2    50   UnSpc ~ 0
+RPI_GPIO_13
+Text GLabel 6200 3950 2    50   UnSpc ~ 0
+RPI_GPIO_6
+Text GLabel 6200 3850 2    50   UnSpc ~ 0
+RPI_GPIO_5
+Text GLabel 3650 4900 2    50   UnSpc ~ 0
+RPI_GPIO_09
+Text GLabel 3650 4800 2    50   UnSpc ~ 0
+RPI_GPIO_10
+Text GLabel 3650 3900 2    50   UnSpc ~ 0
+RPI_GPIO_4
+Text GLabel 3650 4000 2    50   UnSpc ~ 0
+RPI_GPIO_17
+Text GLabel 3650 4600 2    50   UnSpc ~ 0
 RPI_GPIO_27
+Text GLabel 3650 4700 2    50   UnSpc ~ 0
+RPI_GPIO_22
+Text GLabel 3650 3800 2    50   UnSpc ~ 0
+RPI_GPIO_3
+Text GLabel 3650 3700 2    50   UnSpc ~ 0
+RPI_GPIO_2
+Text GLabel 6200 4850 2    50   UnSpc ~ 0
+RPI_GPIO_18
+Text GLabel 6200 4950 2    50   UnSpc ~ 0
+RPI_GPIO_23
+Text GLabel 8750 3750 2    50   UnSpc ~ 0
+RPI_GPIO_24
+Text GLabel 8750 3850 2    50   UnSpc ~ 0
+RPI_GPIO_25
+Text GLabel 8750 3950 2    50   UnSpc ~ 0
+RPI_GPIO_8
+Text GLabel 8750 4050 2    50   UnSpc ~ 0
+RPI_GPIO_7
+Text GLabel 8750 4650 2    50   UnSpc ~ 0
+RPI_GPIO_12
+Text GLabel 8750 4750 2    50   UnSpc ~ 0
+RPI_GPIO_16
 Text GLabel 8750 4850 2    50   UnSpc ~ 0
-RPI_GPIO_28
+RPI_GPIO_20
 Text GLabel 8750 4950 2    50   UnSpc ~ 0
-RPI_GPIO_29
+RPI_GPIO_21
 Connection ~ 4100 7200
 Wire Wire Line
 	4100 7200 4350 7200
@@ -664,11 +664,11 @@ Wire Wire Line
 Wire Wire Line
 	8550 5400 8750 5400
 Text GLabel 6200 3750 2    50   UnSpc ~ 0
-RPI_GPIO_14
+RPI_GPIO_11
 Text GLabel 1850 7200 2    50   UnSpc ~ 0
-RPI_GPIO_16
-Text GLabel 1850 7100 2    50   UnSpc ~ 0
 RPI_GPIO_15
+Text GLabel 1850 7100 2    50   UnSpc ~ 0
+RPI_GPIO_14
 Wire Wire Line
 	1700 7100 1850 7100
 Wire Wire Line
@@ -733,4 +733,12 @@ F 3 "~" H 1500 7200 50  0001 C CNN
 	1    1500 7200
 	-1   0    0    1   
 $EndComp
+Text Notes 9900 4600 0    50   ~ 0
+From PIR
+Text Notes 9900 5450 0    50   ~ 0
+From PIR
+Text Notes 9900 3950 0    50   ~ 0
+To Rpi
+Text Notes 9900 4800 0    50   ~ 0
+To Rpi - NEED 3V3 REG\n
 $EndSCHEMATC
