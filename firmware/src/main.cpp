@@ -7,6 +7,14 @@
 #define SWITCH_TYPE_TOOGLE
 #endif
 
+#define DEBOUNCE_MS 20
+
+#define DEBUG_LED_TIME_RESET 15
+#define SWITCH_RELEASE_STATE 1
+
+unsigned int debug_time = DEBUG_LED_TIME_RESET;
+uint8_t toogle_state = 0;
+
 typedef struct type_switch_t {
   uint8_t pin_from_wall_switch;
   uint8_t pin_from_rpi;
@@ -60,16 +68,7 @@ void setup() {
     pinMode(sw[i].pin_from_rpi, INPUT_PULLUP);
     pinMode(sw[i].pin_to_relay, OUTPUT);
   }
-
 }
-
-#define DEBOUNCE_MS 20
-
-#define DEBUG_LED_TIME_RESET 1000
-#define SWITCH_RELEASE_STATE 1
-
-unsigned int debug_time;
-uint8_t toogle_state = 0;
 
 void loop() {
   unsigned char r;
@@ -113,17 +112,17 @@ void loop() {
     }
  #endif
     delay(DEBOUNCE_MS);
-
   }
 
   if(debug_time>0)
   {
-    digitalWrite(PIN_DEBUG, LOW);
+    digitalWrite(PIN_DEBUG, HIGH);
     debug_time--;
   } 
   else
   {
-    digitalWrite(PIN_DEBUG, HIGH);
+    // digitalWrite(PIN_DEBUG, !digitalRead(PIN_DEBUG));
+    digitalWrite(PIN_DEBUG, LOW);
     debug_time = DEBUG_LED_TIME_RESET;
   }
 
