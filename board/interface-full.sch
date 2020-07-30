@@ -733,12 +733,8 @@ F 3 "~" H 1500 7200 50  0001 C CNN
 	1    1500 7200
 	-1   0    0    1   
 $EndComp
-Text Notes 9900 4600 0    50   ~ 0
-From PIR
-Text Notes 9900 5450 0    50   ~ 0
-From PIR
-Text Notes 9900 3950 0    50   ~ 0
-To Rpi
-Text Notes 9900 4800 0    50   ~ 0
-To Rpi - NEED 3V3 REG\n
+Text Notes 7000 6500 0    50   ~ 0
+For PIR Sensors, don't connect "To Relay" and "From RPI". Use "switch mode" firmware.
+Text Notes 7000 6400 0    50   ~ 0
+NOTES:
 $EndSCHEMATC
